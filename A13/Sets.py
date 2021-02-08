@@ -1,0 +1,2 @@
+
+friends = {'Sasha','Rafael'}
