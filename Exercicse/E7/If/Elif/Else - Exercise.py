@@ -19,7 +19,7 @@ def choose(num_1, t, num_2):
       return answer_def
 
 def conversion(number):
-    return (number / 5 * 9 + 32)
+    return (number * 9 / 5 )+ 32
 
 number_1 = int(input("Tell me a number: "))
 number_2 = int(input("Tell me another number: "))
