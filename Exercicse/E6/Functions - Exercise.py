@@ -11,7 +11,7 @@
 def greeting(name, age=28):
     #Greets user with 'name' from 'input box' and 'age', if available, default age is used
     ###print('Hello '  +  name + ', you are ' + str(age) +'!')
-    print(f'Hello {str(name.capitalize())}, you will be {int(age) + 1}!')
+    print(f'Hello {str(name.capitalize())}, you will be {int(age) + 1}! next birthday!')
 
 name = input('Enter your name: ')
 age = input('Enter your age: ')
