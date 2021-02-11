@@ -1,9 +1,6 @@
-a = [5, 10, 15, 20, 25]
-b = []
-def new_list (num):
-    
-    return 
+a = [5, 10, 15, 20, 25, 30]
 
-new_list(a)
+def listend(x):
+    return [x[0], x[-1]]
 
-print(new_list(a))
+print(listend(a))

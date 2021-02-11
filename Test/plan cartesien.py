@@ -1,12 +1,12 @@
-x = int(input('x: '))
-y = int(input('y: '))
+x = float(input('x: '))
+y = float(input('y: '))
 p = 0
 
 #2plan_range_x = [1,2,3,4,5]
 #plan_range_y = [1,2,3,4,5]
 
 def plan_square (x,y):
-    if x < 0 and y > 0:
+    if x < 0 and y >= 0:
         p = 2
     elif x > 0 and y < 0:
         p = 4
