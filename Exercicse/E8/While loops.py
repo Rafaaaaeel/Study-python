@@ -9,15 +9,15 @@ import random
 #Modification 1: number 1-100, tell user if guess is too high/low ,and let them have 5-10 guesses.
 # Tip:( remember you won’t see  print statements during execution, so If you want to see prints during whle loop, print to the input box (This is specific to this platform)
 
-num = random.randint(1,20)
+num = random.randint(1,50)
 print(num)
 guess = 0
-guess_limit = 3
-guess_try = 3
+guess_limit = 5
+guess_try = 5
 guess_number = 0
 
 while guess_number < guess_limit:
-    guess = int(input('guess a number 1-20'))
+    guess = int(input('guess a number 1-50: '))
     if guess is num:
         print('you win')
         break
@@ -27,7 +27,7 @@ while guess_number < guess_limit:
         else:
             print('too high')
         guess_try -= 1
-        print(f'No try again more {guess_try}')
+        print(f'No, try again more try {guess_try} lefts')
         guess_number += 1
     
 if guess != num:
