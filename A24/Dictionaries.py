@@ -10,18 +10,18 @@ movie['title'] = 'My another life'
 movie.update({'title':'My another and another life', 'year' : 2001, 'cast' : ['Sasha','Noah'] })
 movie['budget']= 250000
 #print(movie.get('budget','nor found'))
-print(movie)
+#print(movie)
 
 year = movie.pop('year')
-print(year)
+#print(year)
 
 #del movie['year']
 
-print(movie)
+#print(movie)
 
-print(movie.keys())
+#print(movie.keys())
 
-print(movie.values())
+#print(movie.values())
 
 #print(movie.items())
 
