@@ -1,8 +1,8 @@
 
 #Continue
 
-for val in "string":
-    if val == "i":
+for val in "rafael":
+    if val == "f":
         continue
     print(val)
 
@@ -12,8 +12,8 @@ print("-----------------------")
 
 #Break
 
-for val in "string":
-    if val == 'i':
+for val in "rafael":
+    if val == 'f':
         break
     print(val)
 
