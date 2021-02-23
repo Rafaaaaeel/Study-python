@@ -1,5 +1,9 @@
-num = 10
+def fat(n):
+    if n == 1:
+        return 1
 
-num  = num - 2
+    return n * fat(n -1)
 
-print(num)
+x = fat(5)
+
+print(x)
