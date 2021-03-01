@@ -21,6 +21,6 @@ word = ''
 for i in range(9):
     word += random.choice(letters_numbers)
 
-word2 = random.choices(friends_list, k=2)   
+word2 = random.choices(friends_list, k = 2)   
 
 print(word2)
