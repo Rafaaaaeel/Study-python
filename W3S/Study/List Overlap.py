@@ -7,3 +7,4 @@ for item in a:
         c.append(item)
 
 print(c)
+
