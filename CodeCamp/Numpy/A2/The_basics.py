@@ -1,6 +1,6 @@
 import numpy as np
 
-a = np.array([1,2,3], dtype='int16')
+a = np.array([1,2,3,4], dtype='int64')
 
 print(a)
 
@@ -24,9 +24,9 @@ print(a.dtype)
 
 # Get Size
 
-print(a.itemsize)
+print('item Size: ',a.itemsize)
 
 
 # Get total size
 
-print(a.nbytes)
+print(f"nbytes: {a.nbytes}")
