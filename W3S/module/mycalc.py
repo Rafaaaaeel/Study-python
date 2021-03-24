@@ -1,3 +1,3 @@
-def calc(n):
+def calc(*n):
     return n + n
     

@@ -6,7 +6,7 @@ number_float = 10.5 #float
 
 string = 'name' #string
 
-Boolean = true or false # boolean
+boolean = True or False # boolean
 
 a="it's"
 b='it\'s'  #escape 
