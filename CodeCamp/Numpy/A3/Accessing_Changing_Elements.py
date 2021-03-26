@@ -21,7 +21,7 @@ print(a[0, 1:6:2])
 
 # Or use
 
-print(a[0, 1:-1:2]) # Write on my book the rest of information
+print(f"using the '-1': {a[0, 1:-1:2]}") 
 
 a[1,5] = 20
 
