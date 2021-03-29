@@ -15,9 +15,9 @@ print(b)
 # Any other number
 
 c = np.full((2,2), 99)
-
-print(c)
-
+print("-------------")
+print(f"C: {c}")
+print("-------------")
 # Any other number (full_like)
 arr = np.array([[1,2,3,4,5,6,7],[8,9,10,11,12,13,14]])
 
@@ -44,9 +44,9 @@ print(g)
 # The identity matrix
 
 h = np.identity(5)
-
-print(h)
-
+print("------")
+print(f"H: {h}")
+print("------")
 # Repeat an aray
 
 arry = np.array([[1,2,3]])
