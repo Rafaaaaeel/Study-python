@@ -52,7 +52,7 @@ print("------")
 arry = np.array([[1,2,3]])
 r1 = np.repeat(arry,3, axis=0)
 
-print(r1)
+print(f"R1: {r1}")
 
 
 
