@@ -17,7 +17,7 @@ print(a / 2)
 
 # Take the sin
 
-print(np.sin(a))
-print(np.cos(a))
+print(f"sin: {np.sin(a)}")
+print(f"cos: {np.cos(a)}")
 
 
