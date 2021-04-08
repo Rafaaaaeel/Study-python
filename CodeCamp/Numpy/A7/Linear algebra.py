@@ -9,3 +9,9 @@ print(b)
 
 c = np.matmul(a,b)
 print(c)
+
+
+# Find the determinant
+d = np.identity(3)
+print(np.linalg.det(d))
+
