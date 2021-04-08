@@ -12,3 +12,8 @@ def sum2(n):
     return (n*(n+1))/2
 
 print(sum2(5))
+
+def bigo(n):
+    return 45*n*3 + 20*n**2 + 19
+
+bigo(1)
