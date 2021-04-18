@@ -76,6 +76,90 @@ srn.distplot(dataset['Salary']).set_title('Salary')
 
 dataset.isnull().sum()
 
+# - Now tratment the datas - 
+
+median = sts.median(dataset['Salary'])
+
+# Change the Null values by median
+dataset["Salary"].fillna(median, inplace=True) # inplace change only the data group
+
+# Verify if rest Null values
+dataset['Salary'].isnull().sum() # before 7 now 0
+
+# Kind, doesn't have patterning and Null values
+group_by_kind = dataset.groupby(['Kind']).size()
+
+# All Null values
+dataset['Kind'].isnull().sum()
+
+# Fill by the common value
+dataset['Kind'].fillna('Male', inplace=True)
+
+# Verify again null values
+dataset['Kind'].isnull().sum() # before 8 now 0
+
+# Patterning by domain
+
+dataset.loc[dataset['Kind'] == 'M', 'Kind'] == "Male"
+dataset.loc[dataset['Kind'].isin(['Won', 'W']), 'kind'] = 'Woman'
+
+# Vizualing results
+
+group_by_kind = dataset.groupby(['Kind']).size()
+
+# Age outline
+
+dataset['Age'].describe()
+
+# Vizualizing problem size
+dataset.loc[(dataset['Age'] < 0) | (dataset['Age'] > 120)]
+
+median = sts.median(dataset['Age'])
+
+# Replace
+dataset.loc[(dataset['Age'] < 0) | (dataset['Age'] > 120), 'Age'] = median
+
+# Verify again
+dataset.loc[(dataset['Idade'] > 0) | ( dataset['Idade'] < 120)]
+
+# Duplicate values, search by id
+dataset[dataset.duplicated(['Id'], keep=False)]
+
+# Remove by ID
+dataset.drop_duplicates(subset="Id", keep="first", inplcae=True)
+
+# Verify again
+dataset[dataset.duplicated(['Id'], keep=False)]
+
+# States out patterning
+group_by_states = dataset.groupby(['States']).size()
+
+# Assigning common value
+dataset.loc[dataset['States'].isin(['RP','SP','TF']), 'States'] = 'RS'
+
+# Verify again
+group_by_states = dataset.groupby(['States']).size()
+
+# Salary OutLiers, whereas clause two default values
+desv = sts.stdev(dataset['Salary'])
+
+# Checking if has a true criterion
+dataset.loc[dataset['Salary'] >= 2 * desv]
+
+# Updatating salary by median, calculating
+median = sts.median(dataset['Salary'])
+
+# Atributes
+dataset.loc[dataset['Salary'] >= 2 * desv, 'Salary'] = median
+
+# Checking again
+dataset.loc[dataset['Salary'] >= 2 desv]
+
+dataset.head()
+dataset.shape # (988,12)
+
+
+
 
 
 
