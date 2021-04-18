@@ -3,16 +3,15 @@ import random
 import time
 
 # Objects creators
-class Person:
-    def __init__(self,name,damage,health):
-        self.name = name
-        self.damage = damage
-        self.health = health
 
 class weapon:
     def __init__(self,name,damage):
         self.name = name
         self.damage = damage
+
+class Person(weapon):
+    def __init__(self,name,damage,health):
+        self.health = health
 
 # Function for choose the weapon
 def choose_weapon(item):
