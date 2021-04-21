@@ -1,5 +1,5 @@
 import os 
-path = 'C:\\Users\\rafae\\Documents\\Python\\'
+path = 'C:\\Users\\rafae\\Documents\\Python\\test'
 os.chdir(path) 
 
 folders = ['folder 1','folder 2','folder 3'] 
