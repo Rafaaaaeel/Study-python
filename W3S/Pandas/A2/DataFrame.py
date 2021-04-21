@@ -11,6 +11,12 @@ data_2 = {
   "duration": [50, 40, 45]
 }
 
-dataset = pd.DataFrame(data_2)
+df = pd.DataFrame(data_2, index = ['day 1', 'day 2', 'day 3'])
 
-print(dataset)
+print(df.loc['day 1'])
+
+# Import external file
+
+df_1 = pd.read_csv("trees.csv")
+
+print(df_1)
